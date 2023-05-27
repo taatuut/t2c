@@ -49,6 +49,8 @@ Add files to folder `docs` see file `tree_docs.txt` created with following comma
 
 `python3 app.py`
 
+Or `gradio app.py` to launch in automatic reload mode.
+
 Go to http://127.0.0.1:7860/ or the online Gradio url.
 
 # prompts
