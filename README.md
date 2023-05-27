@@ -47,6 +47,16 @@ Add files to folder `docs` see file `tree_docs.txt` created with following comma
 
 `python3 app.py`
 
+Go to http://127.0.0.1:7860/ or the online Gradio url.
+
+# prompts
+
+Vertel wat je weet over De Steeg.
+
+Wat is de impact van onttrekkingsverbod op kapitaalintensieve teelten in Noord- en Midden-Limburg.
+
+Geef een overzicht van bestanden die over _onderwerp x_ gaan.
+
 # fail :-)
 
 ```
@@ -58,7 +68,17 @@ Time for a paid account :-)
 # todo
 
 Q1
-Is response limited to custom content only?
+Is response limited to the custom provided content only?
+
+Q2
+What data is exchanged/stored with/at OpenAI?
+
+Q3
+Could not find image processor class in the image processor config or the model config. Loading based on pattern matching with the model's feature extractor configuration.
+
+https://discuss.huggingface.co/t/error-finding-processors-image-class-loading-based-on-pattern-matching-with-feature-extractor/31890/9
+
+https://github.com/jerryjliu/llama_index/issues/872
 
 # links
 

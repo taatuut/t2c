@@ -1,19 +1,18 @@
 openai
 # Preferred is
-pypdf
-# Deprecated?
-#PyPDF2
-gradio
-docx2txt
-# Preferred is
 llama-index
 # Deprecated?
 #gpt_index
 #gpt-index
+pypdf
+PyPDF2
+gradio
+docx2txt
 torch
 transformers
 sentencepiece
 Pillow
+# Use specific version
 protobuf==3.20.3
 #protobuf==3.19.4
 git+https://github.com/openai/whisper.git
