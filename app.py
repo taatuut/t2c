@@ -1,9 +1,6 @@
 from llama_index import SimpleDirectoryReader, GPTListIndex, GPTVectorStoreIndex, LLMPredictor, PromptHelper, StorageContext, load_index_from_storage
-#NOTE: import GPTVectorStoreIndex instead of GPTSimpleVectorIndex, replaced occurences in the code
 from langchain import OpenAI
 import gradio as gr
-import sys
-import os
 
 # Set outside this Python script, see README.md
 #os.environ["OPENAI_API_KEY"] = ''

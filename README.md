@@ -16,7 +16,7 @@ Prefer `brew` for installation tasks.
 
 Install OpenAI library, GPT index and other required modules. Additional modules also depend on kind of content that will be used.
 
-Recently (May 2023) GPT index was renamed to LlamaIndex. Code is adjusted for that. LlamaIndex allows the LLM to connect to the external data that is our knowledge base.
+Recently (April/May 2023) GPT index was replaced by LlamaIndex. Code is adjusted for that. Use `import GPTVectorStoreIndex` instead of `import GPTSimpleVectorIndex` with the correct (changed) properties. LlamaIndex allows the LLM to connect to the external data that is our knowledge base.
 
 ```
 python3 -m pip install --upgrade pip
@@ -38,6 +38,8 @@ Check with `printenv` or `echo $OPENAI_API_KEY`
 # data
 
 Using some public *Waterschap* documents found online. Sample set can be downloaded from https://www.dropbox.com/s/9b8rv11yg7x9p63/waterschaplimburg.nl.zip?dl=1
+
+Feel free to use your own, any other data. Note that there is data exchange with OpenAI so don't use sensitive data.
 
 Add files to folder `docs` see file `tree_docs.txt` created with following command for sample input used:
 
