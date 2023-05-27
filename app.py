@@ -17,10 +17,8 @@ def construct_index(directory_path):
 def chatbot(input_text):
     storage_context = StorageContext.from_defaults(persist_dir="storage")
     index = load_index_from_storage(storage_context)
-    #query_engine = index.as_query_engine()
     query_engine = index.as_query_engine(response_mode="tree_summarize")
     response = query_engine.query(input_text)
-    #response = index.query(input_text, response_mode="compact")
     return response.response, response.source_nodes
 
 if __name__ == '__main__':
