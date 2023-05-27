@@ -47,9 +47,11 @@ Add files to folder `docs` see file `tree_docs.txt` created with following comma
 
 # run
 
-`python3 app.py`
+Must provide an additional argument, when `true` content will be (re)indexed, then start UI. Any other value will start UI assuming index is already available. No proper checks done yet.
 
-Or `gradio app.py` to launch in automatic reload mode.
+`python3 app.py true`
+
+Or `gradio app.py <arg>` to launch in automatic reload mode.
 
 Go to http://127.0.0.1:7860/ or the online Gradio url.
 
@@ -89,3 +91,5 @@ https://github.com/jerryjliu/llama_index/issues/872
 https://gpt-index.readthedocs.io/en/latest/index.html
 
 https://github.com/jerryjliu/llama_index
+
+https://github.com/jerryjliu/llama_index/blob/main/docs/how_to/integrations/vector_stores.md Weaviate

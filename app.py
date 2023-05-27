@@ -1,4 +1,3 @@
-import gradio as gr
 import sys
 
 # Set OPENAI_API_KEY environment variable outside this Python script, see README.md
@@ -22,7 +21,6 @@ def chatbot(input_text):
     query_engine = index.as_query_engine(response_mode="tree_summarize")
     response = query_engine.query(input_text)
     #response = index.query(input_text, response_mode="compact")
-    print(response.source_nodes)
     return response.response, response.source_nodes
 
 if __name__ == '__main__':
@@ -30,13 +28,17 @@ if __name__ == '__main__':
     if len(args) == 1:
         exit()
     else:
+        import gradio as gr
+        from llama_index import StorageContext, load_index_from_storage
         if args[1] == 'true': # args[0] is always name of the script
-            from llama_index import SimpleDirectoryReader, GPTVectorStoreIndex, LLMPredictor, PromptHelper, StorageContext, load_index_from_storage
+            from llama_index import SimpleDirectoryReader, GPTVectorStoreIndex, LLMPredictor, PromptHelper
             from langchain import OpenAI
             index = construct_index("docs")
     # Start up UI, assumes index to be available, need to run one time with 'true' first after adding/changing content in folder docs
+    response_box = gr.Textbox(lines=7, label="Response")
+    source_nodes_box = gr.Textbox(lines=7, label="Source")
     iface = gr.Interface(fn=chatbot,
                         inputs=gr.components.Textbox(lines=7, label="Enter your text in your preferred language"),
-                        outputs="text",
+                        outputs=[response_box,source_nodes_box],
                         title="Dataether Chatbot")
     iface.launch(share=True)
