@@ -160,6 +160,8 @@ cython_debug/
 #.idea/
 
 # Custom
+storage/*
+storage/**
 temp/*
 temp/**
 docs/*

@@ -1,4 +1,4 @@
-from llama_index import SimpleDirectoryReader, GPTListIndex, GPTVectorStoreIndex, LLMPredictor, PromptHelper
+from llama_index import SimpleDirectoryReader, GPTListIndex, GPTVectorStoreIndex, LLMPredictor, PromptHelper, StorageContext, load_index_from_storage
 #NOTE: import GPTVectorStoreIndex instead of GPTSimpleVectorIndex, replaced occurences in the code
 from langchain import OpenAI
 import gradio as gr
@@ -22,19 +22,22 @@ def construct_index(directory_path):
 
     index = GPTVectorStoreIndex.from_documents(documents, llm_predictor=llm_predictor, prompt_helper=prompt_helper)
 
-    index.save_to_disk('index.json')
+    index.storage_context.persist()
 
     return index
 
 def chatbot(input_text):
-    index = GPTVectorStoreIndex.load_from_disk('index.json')
-    response = index.query(input_text, response_mode="compact")
+    storage_context = StorageContext.from_defaults(persist_dir="storage")
+    index = load_index_from_storage(storage_context)
+    query_engine = index.as_query_engine()
+    response = query_engine.query(input_text)
+    #response = index.query(input_text, response_mode="compact")
     return response.response
 
 iface = gr.Interface(fn=chatbot,
-                     inputs=gr.components.Textbox(lines=7, label="Enter your text"),
+                     inputs=gr.components.Textbox(lines=7, label="Enter your text in your preferred language"),
                      outputs="text",
-                     title="My AI Chatbot")
+                     title="Dataether Chatbot")
 
 index = construct_index("docs")
 iface.launch(share=True)
