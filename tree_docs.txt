@@ -1,50 +1,13 @@
-docs
-├── 170124_verslag_informatieavond_nieuw_bergen.docx
-├── 170130_verslag_informatieavond_baarlo.docx
-├── 2.4b - Standpunt WL-WBL inzake Intensivering samenwerking Waterketen Limburg.pdf
-├── 2018-Waterschap-prov-1200.png
-├── 20220103-resultaten-marktverkenning-dienstenleveranciers-omgevingswet.xlsx
-├── 320508927_423959739838958_476954776438751595_n.mp3
-├── 320508927_423959739838958_476954776438751595_n.mp4
-├── 324097031_911212056685755_912153543437927223_n.jpeg
-├── 324582396_2039076719629478_601714073838754836_n.jpeg
-├── 325538613_3108887292742040_3632455568734409527_n.jpeg
-├── 326130228_906780494086304_5235200254673963093_n.jpeg
-├── 4. Metadata waardelijsten.xlsx
-├── Bijlage_004_Zienswijze_Waterschap_Limburg.pdf
-├── FnT33L7XkAErzkf.jpeg
-├── Gestelde vragen tijdens inwonersavond Hegge 8 juli 2021.docx
-├── Onderzoeksdata vragenlijstonderzoek veiligheidsbeleving Chemelot 2021.xlsx
-├── WSL-Dijkversterkingen-Limburg-2019-1870x1331.png
-├── Waterschap Limburg - verduurzaming - energielabel 3244.jpeg
-├── Waterschap_Limburg_crisisbeheersing-scaled.webp
-├── Y2Mate.is - Waterschap Limburg  Werkplaats pitch-heuT6E6hAkU-1080p-1655897018369.mp3
-├── Y2Mate.is - Waterschap Limburg  Werkplaats pitch-heuT6E6hAkU-1080p-1655897018369.mp4
-├── Y2Mate.is - Waterschap Limburg Hoogwaterbeschermingsprogramma in beeld-ScMAaPnKzDw-1080p-1655118797785.mp3
-├── Y2Mate.is - Waterschap Limburg Hoogwaterbeschermingsprogramma in beeld-ScMAaPnKzDw-1080p-1655118797785.mp4
-├── Y2Mate.is - Waterschap Limburg presentatie Well met audio-Qc3H_6-Rd-U-1080p-1654393524186.mp3
-├── Y2Mate.is - Waterschap Limburg presentatie Well met audio-Qc3H_6-Rd-U-1080p-1654393524186.mp4
-├── Zuurstof-Kabroeksebeek-Waterschap-Limburg-4.jpeg
-├── achtergronddocument_geotechniek-kleiner_gedeelte1.pdf
-├── artikel_stal_en_akker_23_december_2022.pdf
-├── bestuursprogramma_2017-2019_waterschap_limburg.pdf
-├── dijkversterking_en_verlegging_Baarlo.pdf
-├── infographic_wib_2019-1.jpeg
-├── marktverkenning_responses_versie_openbaar_20190806.xlsx
-├── meldingsformulier_overname_pompen_en_putten_landbouwkundige_grondwateronttrekkingen_1.docx
-├── meldingsformulier_wijziging_eigen_gegevens_landbouwkundige_grondwateronttrekkingen_1.docx
-├── najaarsrapportage_2018.pdf
-├── nl_government_urls_2023-01-29.xlsx
-├── nota_soortenbeleid_waterschap_limburg.pdf
-├── nota_van_antwoord_arcen.pdf
-├── ontwerp_waterbeheerprogramma_2022-2027.pdf
-├── participatieplan d.d. 15-06-2022.pdf
-├── sfeerverslag_informatieavond_steyl_def.docx
-├── verslag_baarlo_-_hout-blerick_def.docx
-├── verslag_wa_haven_def.docx
-├── voorkeursalternatief_arcen_vastgesteld.pdf
-├── wib_aboekje_wateroverlast_in_je_woning_1.pdf
-├── wsb-2022-11522.pdf
-└── wsb-2022-9773.pdf
+docs/Calamiteitenplan
+├── Bijlage Bijlage 1.pdf
+├── Calamiteitenplan.pdf
+├── HvR_Calamiteitenplan-11jan17.pdf
+├── calamiteitenplan-2020-2023.pdf
+├── calamiteitenplan-definitief-76085.pdf
+├── calamiteitenplan_nzv_2020.pdf
+├── crisisplan-waterschap-zuiderzeeland-2021-2.pdf
+├── crisisplan_wl_2021-2025.pdf
+├── exb-2015-9837.pdf
+└── hb-cza-001-v4.2-calamiteitenplan.pdf
 
-1 directory, 47 files
+1 directory, 10 files

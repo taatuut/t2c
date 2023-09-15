@@ -4,7 +4,7 @@ import sys
 
 def construct_index(directory_path):
     max_input_size = 4096
-    num_outputs = 512
+    num_outputs = 2048
     max_chunk_overlap = 20
     chunk_size_limit = 600
     prompt_helper = PromptHelper(max_input_size, num_outputs, max_chunk_overlap, chunk_size_limit=chunk_size_limit)
@@ -23,18 +23,18 @@ def chatbot(input_text):
 
 if __name__ == '__main__':
     args = sys.argv
-    if len(args) == 1:
+    if len(args) < 3: # args[0] is always name of the script
         exit()
     else:
         import gradio as gr
         from llama_index import StorageContext, load_index_from_storage
-        if args[1] == 'true': # args[0] is always name of the script
+        if args[1] == 'true':
             from llama_index import SimpleDirectoryReader, GPTVectorStoreIndex, LLMPredictor, PromptHelper
             from langchain import OpenAI
-            index = construct_index("docs")
+            index = construct_index(args[2])
     # Start up UI, assumes index to be available, need to run one time with 'true' first after adding/changing content in folder docs
-    response_box = gr.Textbox(lines=7, label="Response")
-    source_nodes_box = gr.Textbox(lines=7, label="Source")
+    response_box = gr.Textbox(lines=20, label="Response")
+    source_nodes_box = gr.Textbox(lines=20, label="Source")
     iface = gr.Interface(fn=chatbot,
                         inputs=gr.components.Textbox(lines=7, label="Enter your text in your preferred language"),
                         outputs=[response_box,source_nodes_box],

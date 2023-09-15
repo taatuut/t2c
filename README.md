@@ -49,7 +49,7 @@ Add files to folder `docs` see file `tree_docs.txt` created with following comma
 
 Must provide an additional argument, when `true` content will be (re)indexed, then start UI. Any other value will start UI assuming index is already available. No proper checks done yet.
 
-`python3 app.py true`
+`python3 app.py true "docs/Calamiteitenplan"`
 
 Or `gradio app.py <arg>` to launch in automatic reload mode.
 
@@ -57,11 +57,37 @@ Go to http://127.0.0.1:7860/ or the online Gradio url.
 
 # prompts
 
+## voor de calamiteiten set
+
+Wat moet het Waterschap doen als de Roer te hoog komt te staan?
+
+Wat zijn de specifieke risico's op schade door hoogwater in de binnendijkse gebieden van de Hollandse IJssel stroomopwaarts van Krimpen aan de IJssel?
+
+Wat zijn de specifieke risico's op schade door hoogwater in de binnendijkse gebieden van de Maas stroomopwaarts van Gennep?
+
+Wat zijn de specifieke risico's op schade door hoogwater in de binnendijkse gebieden van de Maas stroomafwaarts van Roermond tot Sambeek?
+
+Op welke manier werken Waterschapsbedrijf Limburg, Waterscha Limburg en WML Limburgs Drinkwater samen in geval van calamiteiten, en wat is hierbij de rol van VRZL?
+
+Geef me van alle instanties die ik kan bellen in geval van calamiteiten de telefoonnummers.
+
+## voor de algemene set
+
 Vertel wat je weet over De Steeg.
 
 Wat is de impact van onttrekkingsverbod op kapitaalintensieve teelten in Noord- en Midden-Limburg.
 
 Geef een overzicht van bestanden die over _onderwerp x_ gaan.
+
+# warnings
+
+Warnings like
+
+```
+Multiple definitions in dictionary at byte 0x41ea0 for key /Im7
+```
+
+during index process can be ignored.
 
 # fail :-)
 
