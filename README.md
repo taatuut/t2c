@@ -59,7 +59,11 @@ Go to http://127.0.0.1:7860/ or the online Gradio url.
 
 ## voor de calamiteiten set
 
+Wat is het wettelijk kader bij bestrijding van crises?
+
 Wat moet het Waterschap doen als de Roer te hoog komt te staan?
+
+Wat moet het Waterschap doen om bij hoogwater in de Roer het peil met minstens 40 cm te verlagen?
 
 Wat zijn de specifieke risico's op schade door hoogwater in de binnendijkse gebieden van de Hollandse IJssel stroomopwaarts van Krimpen aan de IJssel?
 
@@ -70,6 +74,10 @@ Wat zijn de specifieke risico's op schade door hoogwater in de binnendijkse gebi
 Op welke manier werken Waterschapsbedrijf Limburg, Waterscha Limburg en WML Limburgs Drinkwater samen in geval van calamiteiten, en wat is hierbij de rol van VRZL?
 
 Geef me van alle instanties die ik kan bellen in geval van calamiteiten de telefoonnummers.
+
+Noem de plaatsen in Limburg waar hockeyvelden onderstromen bij hoogwater van de Maas.
+
+
 
 ## voor de algemene set
 
