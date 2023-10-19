@@ -41,15 +41,17 @@ Using some public *Waterschap* documents found online. Sample set can be downloa
 
 Feel free to use your own, any other data. Note that there is data exchange with OpenAI so don't use sensitive data.
 
-Add files to folder `docs` see file `tree_docs.txt` created with following command for sample input used:
+Add files to folder `docs` (as this is ignored so data won't end up in the frepo, or point to any other folder).
 
-`tree docs > tree_docs.txt`
+Can create a file with overview of contents uses with command `tree docs > tree_docs.txt`. Install with `brew install tree` if not available.
+
+
 
 # run
 
-Must provide an additional argument, when `true` content will be (re)indexed, then start UI. Any other value will start UI assuming index is already available. No proper checks done yet.
+Must provide an additional argument, when `true` content will be (re)indexed, then start UI. Any other value will start UI assuming index is already available. No further proper checks done yet.
 
-`python3 app.py true "docs/Calamiteitenplan"`
+`python3 app.py true "docs"`
 
 Or `gradio app.py <arg>` to launch in automatic reload mode.
 

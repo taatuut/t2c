@@ -5,7 +5,7 @@ import sys
 def construct_index(directory_path):
     max_input_size = 4096
     num_outputs = 2048
-    max_chunk_overlap = 20
+    max_chunk_overlap = 0.2 #20
     chunk_size_limit = 600
     prompt_helper = PromptHelper(max_input_size, num_outputs, max_chunk_overlap, chunk_size_limit=chunk_size_limit)
     llm_predictor = LLMPredictor(llm=OpenAI(temperature=0.7, model_name="text-davinci-003", max_tokens=num_outputs))

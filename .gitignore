@@ -171,3 +171,5 @@ docs/**
 .DS_Store
 */.DS_Store
 **/.DS_Store
+tree_docs.txt
+questions.txt
