@@ -37,15 +37,13 @@ Check with `printenv` or `echo $OPENAI_API_KEY`
 
 # data
 
-Using some public *Waterschap* documents found online. Sample set can be downloaded from https://www.dropbox.com/s/9b8rv11yg7x9p63/waterschaplimburg.nl.zip?dl=1
+Use public documents found online, for example for Wayterschappen or Heineken. A sample set can be downloaded from https://www.dropbox.com/s/9b8rv11yg7x9p63/waterschaplimburg.nl.zip?dl=1
 
 Feel free to use your own, any other data. Note that there is data exchange with OpenAI so don't use sensitive data.
 
-Add files to folder `docs` (as this is ignored so data won't end up in the frepo, or point to any other folder).
+Add files to folder `docs` (as this is ignored so data won't end up in the repo, or just point to any other folder).
 
-Can create a file with overview of contents uses with command `tree docs > tree_docs.txt`. Install with `brew install tree` if not available.
-
-
+You can create a file with overview of contents uses with command `tree docs > tree_docs.txt`. Install with `brew install tree` if not available.
 
 # run
 
@@ -59,7 +57,7 @@ Go to http://127.0.0.1:7860/ or the online Gradio url.
 
 # prompts
 
-## voor de calamiteiten set
+## voor de Waterschappen calamiteiten set
 
 Wat is het wettelijk kader bij bestrijding van crises?
 
@@ -79,15 +77,23 @@ Geef me van alle instanties die ik kan bellen in geval van calamiteiten de telef
 
 Noem de plaatsen in Limburg waar hockeyvelden onderstromen bij hoogwater van de Maas.
 
-
-
-## voor de algemene set
+## voor de algemene Waterschappen set
 
 Vertel wat je weet over De Steeg.
 
 Wat is de impact van onttrekkingsverbod op kapitaalintensieve teelten in Noord- en Midden-Limburg.
 
 Geef een overzicht van bestanden die over _onderwerp x_ gaan.
+
+## voor de Heineken set
+
+How does Solace PubSub+ platform fit in the Heineken EverGreen strategy?
+
+Wat zijn de dagelijkse werkzaamheden van Guus bij Heineken?
+
+Of in Engels "Describe the daily work activities of Guus Groeneweg at Heineken".
+
+Mag ook in het Nederlands, bijvoorbeeld "Hoe zorgt Heineken ervoor dat ze real-time data kunnen gebruiken?" en dan zie je meteen dat we nog niet gewenste antwoord krijgen...
 
 # warnings
 
