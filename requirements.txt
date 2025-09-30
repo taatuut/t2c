@@ -13,6 +13,6 @@ transformers
 sentencepiece
 Pillow
 # Use specific version
-protobuf==3.20.3
+protobuf==4.25.8
 #protobuf==3.19.4
 git+https://github.com/openai/whisper.git
